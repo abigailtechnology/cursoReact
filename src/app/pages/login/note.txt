@@ -1,0 +1,71 @@
+//React Hooks*
+/*
+Importações:
+import { useEffect, useMemo, useState } from "react";
+
+export const Login = () => { //função
+
+    ->useState:
+        *useState é um React Hook que permite adicionar o estado da 
+        variável ao seu componente. 
+        Parametros:
+        Valor Inicial ou tipagem 
+    Ex:
+        const [email, setEmail] = useState('');
+        const [password, setPassword] = useState('');
+    Ex com tipagem:
+    const [] = useState<String[]>([]);
+    
+    ->useMemo:
+        *Armazena na memória para não precisar ser refeito
+        *Usado para operações complexas, como cálculos
+        *useMemo precisa de dois valores:
+            *factory: é uma operação realiza que tem retorno 
+            *array de dependencia: quando uma dependencia é alterada 
+            a factory é executada com novo valor    
+    Ex:
+        const emailLength = useMemo(() =>{
+        return email.length; //retorna tamanho do email
+    },[email.length]); 
+
+    ->useEffect:
+
+
+    Ex:
+        useEffect(() => {
+            console.log(email)
+        }, [email, password]);
+
+        useEffect(() => {
+            console.log(password)
+        }, [email, password]);
+
+    ->useCallback
+        Armazena funções
+    Ex:
+
+Json Server
+Instalar Json server dentro do projeto
+    yarn add -D json-server
+
+Start Json Server
+   npx json-server --watch ./mock/db.json    
+Conectando com backend
+
+Instalar o axios
+    yarn add axios
+Configurar axios
+   Arquivo: ApiConfig.ts 
+
+
+
+
+
+
+
+
+
+
+
+
+*/
